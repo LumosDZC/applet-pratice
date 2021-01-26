@@ -1,0 +1,31 @@
+/* pages/good_list/index.wxss */
+.good_list .good_tab navigator {
+  display: flex;
+  min-height: 200rpx;
+  border-bottom: 1px solid #ccc;
+}
+.good_list .good_tab navigator .good_img {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.good_list .good_tab navigator .good_img image {
+  width: 70%;
+}
+.good_list .good_tab navigator .good_info {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.good_list .good_tab navigator .good_info .good_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  max-height: 68rpx;
+}
+.good_list .good_tab navigator .good_info .good_price {
+  color: var(--themeColor);
+}

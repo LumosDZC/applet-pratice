@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "SearchInput": "../../components/SearchInput/SearchInput",
+    "Tabs": "../../components/Tabs/Tabs"
+
+  },
+  "navigationBarTitleText": "shop列表",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+
+}

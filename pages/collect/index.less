@@ -1,0 +1,65 @@
+/* pages/collect/index.wxss */
+
+.collect_main {
+    background: #f3f4f6;
+
+    .collect_title {
+        padding: 40rpx 0;
+
+        .collect_tips {
+            margin: 0 20rpx;
+            color: #666;
+            padding: 15rpx;
+            font-size: 32rpx;
+            border: 1rpx solid #ccc;
+            border-radius: 10rpx;
+            text-align: center;
+        }
+
+        .active {
+            color: var(--themeColor);
+            border-color: currentColor;
+
+        }
+    }
+
+    .collect_content {
+        background: #fff;
+        navigator {
+            display: flex;
+            min-height: 200rpx;
+            border-bottom: 1px solid #ccc;
+
+            .good_img {
+                flex: 2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                image {
+                    width: 70%;
+                    // max-height: 180rpx;
+                }
+            }
+
+            .good_info {
+                flex: 3;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                .good_name {
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    max-height: 68rpx;
+                }
+
+                .good_price {
+                    color: var(--themeColor);
+                }
+            }
+        }
+    }
+}

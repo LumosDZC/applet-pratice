@@ -1,0 +1,4 @@
+<button type="primary" plain open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">
+    <!-- getUserInfo--获取用户信息 ,绑定事件-->
+    获取授权
+</button>

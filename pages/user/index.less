@@ -1,0 +1,143 @@
+page {
+    background: #edece8;
+}
+
+.user_info_wrap {
+    height: 45vh;
+    overflow: hidden;
+    background: #fff;
+    border-bottom: 1rpx solid #ccc;
+
+    .user_img_wrap {
+        position: relative;
+
+        .user_bg {
+            height: 50vh;
+            width: 100%;
+            //高斯模糊,越高越模糊
+            filter: blur(10rpx);
+        }
+
+        .user_info {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 20%;
+            text-align: center;
+
+            .user_icon {
+                width: 150rpx;
+                height: 150rpx;
+                border-radius: 50%;
+            }
+
+            .user_name {
+                margin-top: 40rpx;
+                color: #fff;
+                // font-size: 40rpx;
+                font-weight: 600;
+            }
+        }
+
+
+    }
+
+    .user_btn {
+        height: 100%;
+        position: relative;
+
+        button {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10rpx;
+            text-align: center;
+            width: 45%;
+        }
+    }
+}
+
+.user_content {
+    position: relative;
+
+    .user_main {
+        position: absolute;
+        margin: -20rpx 20rpx 0;
+        width: ~'calc( 100% - 40rpx)';
+        z-index: 10;
+        color: #666;
+
+        .history_wrap {
+            background: #fff;
+            display: flex;
+            navigator {
+                flex: 1;
+                text-align: center;
+                padding: 10rpx 0;
+
+                .his_num {
+                    color: var(--themeColor);
+                }
+            }
+        }
+
+        .orders_wrap {
+            background: #fff;
+            margin-top: 30rpx;
+
+            .orders_title {
+                padding: 20rpx;
+                border-bottom: 1rpx solid #ccc;
+            }
+
+            .orders_content {
+                display: flex;
+
+                navigator {
+                    padding: 15rpx 0;
+                    flex: 1;
+                    text-align: center;
+                    .iconfont {
+                        font-size: 40rpx;
+                        color: var(--themeColor);
+                    }
+
+                    .order_name {
+
+                    }
+                }
+            }
+
+        }
+
+        .address_wrap {
+            margin-top: 30rpx;
+            background: #fff;
+            padding: 20rpx;
+        }
+
+        .app_info_wrap {
+            margin-top: 30rpx;
+            background: #fff;
+
+            .app_info_item {
+                display: block;
+                padding: 20rpx;
+                border-bottom: 1rpx solid #ccc;
+            }
+
+            .app_info_contact {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+        .recommend_wrap {
+            margin: 30rpx 0;
+            background: #fff;
+            padding: 20rpx;
+        }
+    }
+}

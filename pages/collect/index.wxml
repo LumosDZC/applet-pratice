@@ -1,0 +1,23 @@
+<!-- pages/collect/index.wxml -->
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleChangeItem">
+    <view class="collect_main">
+        <view class="collect_title">
+            <text data-index="0" bindtap="handleChangeType" class="collect_tips {{typeIndex==0?'active':' '}}">全部</text>
+            <text data-index="1" bindtap="handleChangeType" class="collect_tips {{typeIndex==1?'active':' '}}">正在热卖</text>
+            <text data-index="2" bindtap="handleChangeType" class="collect_tips {{typeIndex==2?'active':' '}}">即将上线</text>
+        </view>
+        <view class="collect_content">
+            <navigator class="" target="" url="" open-type="navigate" wx:for="{{collect}}" wx:key="goods_id" url="/pages/good_detail/index?goods_id={{item.goods_id}}">
+                <!-- 左边图片容器 -->
+                <view class="good_img">
+                    <image mode="widthFix" class="pic" src="{{item.goods_small_logo?item.goods_small_logo:'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2707058791,1463107176&fm=26&gp=0.jpg'}}"></image>
+                </view>
+                <!-- 右边商品容器 -->
+                <view class="good_info">
+                    <view class="good_name">{{item.goods_name}}</view>
+                    <view class="good_price">￥{{item.goods_price}}</view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+</Tabs>

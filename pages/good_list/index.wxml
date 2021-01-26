@@ -1,0 +1,30 @@
+<view class="good_list">
+    <SearchInput></SearchInput>
+    <!-- 监听自定义事件 -->
+    <Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+        <block wx:if="{{tabs[0].isActive}}">
+            <view class="good_tab">
+                <navigator class="" target="" url="" 
+                open-type="navigate"
+                wx:for="{{goodList}}"
+                wx:key="goods_id"
+                url="/pages/good_detail/index?goods_id={{item.goods_id}}"
+                >
+                    <!-- 左边图片容器 -->
+                    <view class="good_img">
+                        <image mode="widthFix" class="pic" src="{{item.goods_small_logo?item.goods_small_logo:'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2707058791,1463107176&fm=26&gp=0.jpg'}}"></image>
+                    </view>
+                    <!-- 右边商品容器 -->
+                    <view class="good_info">
+                        <view class="good_name">
+                            {{item.goods_name}}
+                        </view>
+                        <view class="good_price">￥{{item.goods_price}}</view>
+                    </view>
+                </navigator>
+            </view>
+        </block>
+        <block wx:elif="{{tabs[1].isActive}}"></block>
+        <block wx:else="{{tabs[2].isActive}}"></block>
+    </Tabs>
+</view>

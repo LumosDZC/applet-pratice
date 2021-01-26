@@ -1,0 +1,115 @@
+/* pages/good_detail/index.wxss */
+page {
+    padding-bottom: 90rpx;
+}
+.detail_wrap {
+    .detail_lunbo {
+        height: 65vw;
+        text-align: center;
+
+        image {
+            width: 60%;
+        }
+    }
+
+    .good_price {
+        padding: 15rpx;
+        font-size: 32rpx;
+        font-weight: 600;
+        color: var(--themeColor);
+    }
+
+    .good_name_row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 5rpx solid #dedede;
+        border-bottom: 5rpx solid #dedede;
+        padding: 10rpx 0;
+
+        .good_name {
+            flex: 5;
+            color: #000;
+            font-size: 30rpx;
+            padding: 0 10rpx;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+
+        .good_collect {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-left: 5rpx solid #ccc;
+
+            .iconfont {}
+
+            .icon-shoucang1 {
+                color: orange;
+            }
+        }
+    }
+
+    .good_info {
+        .good_info_title {
+            color: var(--themeColor);
+            font-size: 32rpx;
+            font-weight: 600;
+            padding: 20rpx;
+        }
+
+        .good_info_content {}
+    }
+
+    .btm_tool {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 90rpx;
+        background: #fff;
+        display: flex;
+        z-index: 10;
+        border-top: 1rpx solid #ccc;
+
+        .tool_item {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 24rpx;
+            position: relative;
+
+            button {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+            }
+        }
+
+        .btn_cart {
+            flex: 2;
+            font-size: 30rpx;
+            font-weight: 600;
+            color: #fff;
+            background: #ffa500;
+        }
+
+        .btn_buy {
+            flex: 2;
+            font-size: 30rpx;
+            font-weight: 600;
+            color: #fff;
+            background: #eb4450;
+        }
+    }
+
+}
